@@ -8,7 +8,6 @@
 //
 import UIKit
 import AVFoundation
-import Vision
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     let label: UILabel = {
@@ -19,6 +18,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         label.font = label.font.withSize(30)
         return label
     }()
+    
+    let recogniser: ImageRecogniser = ImageRecogniser()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,22 +60,11 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
     // called everytime a frame is captured
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        guard let model = try? VNCoreMLModel(for: Resnet50().model) else {return}
-
-        let request = VNCoreMLRequest(model: model) { (finishedRequest, error) in
-
-            guard let results = finishedRequest.results as? [VNClassificationObservation] else { return }
-            guard let Observation = results.first else { return }
-
-            DispatchQueue.main.async(execute: {
-                self.label.text = "\(Observation.identifier)"
-                print(Observation.confidence)
-            })
-        }
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-
-        // executes request
-        try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
+        let newLabel = self.recogniser.runModel(onFrame: pixelBuffer)
+        DispatchQueue.main.async {
+            self.label.text = "\(newLabel!)"
+        }
     }
 
     func setupLabel() {
