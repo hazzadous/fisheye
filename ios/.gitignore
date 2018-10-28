@@ -109,3 +109,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+
+# Ignore tflite model files, they should be downloaded with ./download_models.sh
+data/
