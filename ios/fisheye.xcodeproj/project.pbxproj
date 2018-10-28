@@ -8,25 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4A2F380D21692A51005D811D /* ImageRecogniser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F380C21692A51005D811D /* ImageRecogniser.mm */; };
+		4A4EA16F2173A13E001F9BB5 /* goldfish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A4EA16E2173A13E001F9BB5 /* goldfish.jpg */; };
+		4A4EA1702173A6D0001F9BB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8106C6215815F900333C01 /* Assets.xcassets */; };
 		4A8106C0215815F800333C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8106BF215815F800333C01 /* AppDelegate.swift */; };
 		4A8106C2215815F800333C01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8106C1215815F800333C01 /* ViewController.swift */; };
 		4A8106C7215815F900333C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8106C6215815F900333C01 /* Assets.xcassets */; };
 		4A8106D5215815F900333C01 /* fisheyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8106D4215815F900333C01 /* fisheyeTests.swift */; };
-		4A8106E0215815F900333C01 /* fisheyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8106DF215815F900333C01 /* fisheyeUITests.swift */; };
 		4A8106EE215817DA00333C01 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		4AB667FF21691F490005C4EC /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4AB667FE21691F490005C4EC /* Resnet50.mlmodel */; };
+		4AEA2ED0218492740078687E /* mobilenet_v1_1.0_224.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 4AEA2ECE218492740078687E /* mobilenet_v1_1.0_224.tflite */; };
+		4AEA2ED1218492740078687E /* mobilenet_v1_1.0_224.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 4AEA2ECE218492740078687E /* mobilenet_v1_1.0_224.tflite */; };
+		4AEA2ED3218492740078687E /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AEA2ECF218492740078687E /* labels.txt */; };
+		4AEA2ED4218492740078687E /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AEA2ECF218492740078687E /* labels.txt */; };
+		4AEA2ED7218521EF0078687E /* UIImage+PixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEA2ED6218521EF0078687E /* UIImage+PixelBuffer.swift */; };
+		4AEA2ED8218521EF0078687E /* UIImage+PixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEA2ED6218521EF0078687E /* UIImage+PixelBuffer.swift */; };
 		82AE4A4AABCA794033F4D8B0 /* libPods-fisheye.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97008A217B12C443CDA780DA /* libPods-fisheye.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		4A8106D1215815F900333C01 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A8106B4215815F800333C01 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A8106BB215815F800333C01;
-			remoteInfo = fisheye;
-		};
-		4A8106DC215815F900333C01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A8106B4215815F800333C01 /* Project object */;
 			proxyType = 1;
@@ -40,6 +39,7 @@
 		4A2F380B21692A51005D811D /* fisheye-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fisheye-Bridging-Header.h"; sourceTree = "<group>"; };
 		4A2F380C21692A51005D811D /* ImageRecogniser.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageRecogniser.mm; sourceTree = "<group>"; };
 		4A2F380E21692AC0005D811D /* ImageRecogniser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageRecogniser.h; sourceTree = "<group>"; };
+		4A4EA16E2173A13E001F9BB5 /* goldfish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goldfish.jpg; sourceTree = "<group>"; };
 		4A8106BC215815F800333C01 /* fisheye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fisheye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A8106BF215815F800333C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A8106C1215815F800333C01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,11 +48,10 @@
 		4A8106D0215815F900333C01 /* fisheyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fisheyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A8106D4215815F900333C01 /* fisheyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fisheyeTests.swift; sourceTree = "<group>"; };
 		4A8106D6215815F900333C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A8106DB215815F900333C01 /* fisheyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fisheyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A8106DF215815F900333C01 /* fisheyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fisheyeUITests.swift; sourceTree = "<group>"; };
-		4A8106E1215815F900333C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AB667FE21691F490005C4EC /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		4AD0879D216A893B00A34EA3 /* ImageRecogniser+Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageRecogniser+Swift.h"; sourceTree = "<group>"; };
+		4AEA2ECE218492740078687E /* mobilenet_v1_1.0_224.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; name = mobilenet_v1_1.0_224.tflite; path = data/mobilenet_v1_1.0_224.tflite; sourceTree = "<group>"; };
+		4AEA2ECF218492740078687E /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = labels.txt; path = data/labels.txt; sourceTree = "<group>"; };
+		4AEA2ED6218521EF0078687E /* UIImage+PixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+PixelBuffer.swift"; sourceTree = "<group>"; };
 		5D55D21253973BDA2F1983F8 /* Pods-fisheye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fisheye.release.xcconfig"; path = "Pods/Target Support Files/Pods-fisheye/Pods-fisheye.release.xcconfig"; sourceTree = "<group>"; };
 		97008A217B12C443CDA780DA /* libPods-fisheye.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fisheye.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,13 +66,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4A8106CD215815F900333C01 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A8106D8215815F900333C01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -95,9 +87,10 @@
 		4A8106B3215815F800333C01 = {
 			isa = PBXGroup;
 			children = (
+				4AEA2ECF218492740078687E /* labels.txt */,
+				4AEA2ECE218492740078687E /* mobilenet_v1_1.0_224.tflite */,
 				4A8106BE215815F800333C01 /* fisheye */,
 				4A8106D3215815F900333C01 /* fisheyeTests */,
-				4A8106DE215815F900333C01 /* fisheyeUITests */,
 				4A8106BD215815F800333C01 /* Products */,
 				235CCB292A62F9E49DAD5D9F /* Pods */,
 				FCDFF73581455B5A26836339 /* Frameworks */,
@@ -109,7 +102,6 @@
 			children = (
 				4A8106BC215815F800333C01 /* fisheye.app */,
 				4A8106D0215815F900333C01 /* fisheyeTests.xctest */,
-				4A8106DB215815F900333C01 /* fisheyeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,7 +109,6 @@
 		4A8106BE215815F800333C01 /* fisheye */ = {
 			isa = PBXGroup;
 			children = (
-				4AB667FE21691F490005C4EC /* Resnet50.mlmodel */,
 				4A8106BF215815F800333C01 /* AppDelegate.swift */,
 				4A8106C1215815F800333C01 /* ViewController.swift */,
 				4A8106C6215815F900333C01 /* Assets.xcassets */,
@@ -126,6 +117,7 @@
 				4A2F380B21692A51005D811D /* fisheye-Bridging-Header.h */,
 				4A2F380E21692AC0005D811D /* ImageRecogniser.h */,
 				4AD0879D216A893B00A34EA3 /* ImageRecogniser+Swift.h */,
+				4AEA2ED6218521EF0078687E /* UIImage+PixelBuffer.swift */,
 			);
 			path = fisheye;
 			sourceTree = "<group>";
@@ -133,19 +125,11 @@
 		4A8106D3215815F900333C01 /* fisheyeTests */ = {
 			isa = PBXGroup;
 			children = (
+				4A4EA16E2173A13E001F9BB5 /* goldfish.jpg */,
 				4A8106D4215815F900333C01 /* fisheyeTests.swift */,
 				4A8106D6215815F900333C01 /* Info.plist */,
 			);
 			path = fisheyeTests;
-			sourceTree = "<group>";
-		};
-		4A8106DE215815F900333C01 /* fisheyeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4A8106DF215815F900333C01 /* fisheyeUITests.swift */,
-				4A8106E1215815F900333C01 /* Info.plist */,
-			);
-			path = fisheyeUITests;
 			sourceTree = "<group>";
 		};
 		FCDFF73581455B5A26836339 /* Frameworks */ = {
@@ -195,24 +179,6 @@
 			productReference = 4A8106D0215815F900333C01 /* fisheyeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4A8106DA215815F900333C01 /* fisheyeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4A8106EA215815F900333C01 /* Build configuration list for PBXNativeTarget "fisheyeUITests" */;
-			buildPhases = (
-				4A8106D7215815F900333C01 /* Sources */,
-				4A8106D8215815F900333C01 /* Frameworks */,
-				4A8106D9215815F900333C01 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4A8106DD215815F900333C01 /* PBXTargetDependency */,
-			);
-			name = fisheyeUITests;
-			productName = fisheyeUITests;
-			productReference = 4A8106DB215815F900333C01 /* fisheyeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -228,10 +194,6 @@
 						LastSwiftMigration = 1000;
 					};
 					4A8106CF215815F900333C01 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 4A8106BB215815F800333C01;
-					};
-					4A8106DA215815F900333C01 = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 4A8106BB215815F800333C01;
 					};
@@ -252,7 +214,6 @@
 			targets = (
 				4A8106BB215815F800333C01 /* fisheye */,
 				4A8106CF215815F900333C01 /* fisheyeTests */,
-				4A8106DA215815F900333C01 /* fisheyeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A8106C7215815F900333C01 /* Assets.xcassets in Resources */,
+				4AEA2ED3218492740078687E /* labels.txt in Resources */,
+				4AEA2ED0218492740078687E /* mobilenet_v1_1.0_224.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,13 +233,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A8106D9215815F900333C01 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				4A4EA1702173A6D0001F9BB5 /* Assets.xcassets in Resources */,
+				4AEA2ED1218492740078687E /* mobilenet_v1_1.0_224.tflite in Resources */,
+				4A4EA16F2173A13E001F9BB5 /* goldfish.jpg in Resources */,
+				4AEA2ED4218492740078687E /* labels.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +270,7 @@
 			files = (
 				4A8106C2215815F800333C01 /* ViewController.swift in Sources */,
 				4A8106EE215817DA00333C01 /* (null) in Sources */,
-				4AB667FF21691F490005C4EC /* Resnet50.mlmodel in Sources */,
+				4AEA2ED7218521EF0078687E /* UIImage+PixelBuffer.swift in Sources */,
 				4A2F380D21692A51005D811D /* ImageRecogniser.mm in Sources */,
 				4A8106C0215815F800333C01 /* AppDelegate.swift in Sources */,
 			);
@@ -320,15 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AEA2ED8218521EF0078687E /* UIImage+PixelBuffer.swift in Sources */,
 				4A8106D5215815F900333C01 /* fisheyeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A8106D7215815F900333C01 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A8106E0215815F900333C01 /* fisheyeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,11 +292,6 @@
 			isa = PBXTargetDependency;
 			target = 4A8106BB215815F800333C01 /* fisheye */;
 			targetProxy = 4A8106D1215815F900333C01 /* PBXContainerItemProxy */;
-		};
-		4A8106DD215815F900333C01 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A8106BB215815F800333C01 /* fisheye */;
-			targetProxy = 4A8106DC215815F900333C01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -523,6 +471,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4B9R7B3V28;
 				INFOPLIST_FILE = fisheyeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,6 +492,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4B9R7B3V28;
 				INFOPLIST_FILE = fisheyeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -554,44 +504,6 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fisheye.app/fisheye";
-			};
-			name = Release;
-		};
-		4A8106EB215815F900333C01 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = fisheyeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Microwayes.fisheyeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = fisheye;
-			};
-			name = Debug;
-		};
-		4A8106EC215815F900333C01 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = fisheyeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Microwayes.fisheyeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = fisheye;
 			};
 			name = Release;
 		};
@@ -621,18 +533,8 @@
 			buildConfigurations = (
 				4A8106E8215815F900333C01 /* Debug */,
 				4A8106E9215815F900333C01 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4A8106EA215815F900333C01 /* Build configuration list for PBXNativeTarget "fisheyeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A8106EB215815F900333C01 /* Debug */,
-				4A8106EC215815F900333C01 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			); defaultConfigurationIsVisible = 0; defaultConfigurationName =
+			Release;
 		};
 /* End XCConfigurationList section */
 	};

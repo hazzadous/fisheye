@@ -61,7 +61,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     // called everytime a frame is captured
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-        let newLabel = self.recogniser.runModel(onFrame: pixelBuffer)
+        let cgImage = UIImage(pixelBuffer: pixelBuffer)?.cgImage
+
+        let newLabel = self.recogniser.runModel(on: cgImage)
         DispatchQueue.main.async {
             self.label.text = "\(newLabel!)"
         }

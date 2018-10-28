@@ -14,7 +14,7 @@
 
 @interface ImageRecogniser : NSObject
 
-- (NSString*) runModelOnFrame: (CVPixelBufferRef) pixelBuffer;
+- (NSString*) runModelOnImage: (CGImageRef) image;
 
 @end
 

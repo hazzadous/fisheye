@@ -24,9 +24,8 @@
     std::unique_ptr<tflite::Interpreter> interpreter;
 }
 
-@property (atomic, readonly) std::vector<int> bar;
+- (NSString*) runModelOnImage: (CGImageRef) image;
 
-- (NSString*) runModelOnFrame: (CVPixelBufferRef) pixelBuffer;
 
 @end
 
