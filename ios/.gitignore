@@ -80,3 +80,6 @@ iOSInjectionProject/
 # Avoid adding installed Pods via cocoapods
 
 Pods/
+
+# Ignore training data, this should be generated/downloaded not committed
+data/
