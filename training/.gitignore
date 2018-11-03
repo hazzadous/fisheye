@@ -113,3 +113,5 @@ dmypy.json
 # Flower training data files
 flower_photos/
 flower_photos.tgz
+
+datasets/
