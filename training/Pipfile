@@ -10,6 +10,8 @@ tensorflow-hub = "*"
 keras = "*"
 
 [dev-packages]
+"flake8" = "*"
+black = "*"
 
 [requires]
 python_version = "3.7"
